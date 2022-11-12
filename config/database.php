@@ -68,7 +68,7 @@ return [
                     'NO_ENGINE_SUBSTITUTION'
             ],
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('/home/site/wwwroot/ssl/DigiCertGlobalRootCA.crt.pem'),
+                PDO::MYSQL_ATTR_SSL_CA => env('/ssl/DigiCertGlobalRootCA.crt.pem'),
             ]) : [],
         ],
 

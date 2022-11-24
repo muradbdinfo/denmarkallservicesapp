@@ -43,7 +43,7 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-        'mysql' => [
+'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'allservicesapp.mysql.database.azure.com'),
@@ -71,7 +71,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('/ssl/DigiCertGlobalRootCA.crt.pem'),
             ]) : [],
         ],
-
+        
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
